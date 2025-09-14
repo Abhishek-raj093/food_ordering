@@ -1,3 +1,18 @@
+<div align="center">
+  <br />
+    <a href="https://www.youtube.com/watch?v=LKrX390fJMw" target="_blank">
+      <img src="assets/readme/hero.png" alt="Project Banner">
+    </a>
+  <br />
+
+  <div>
+    <img src="https://img.shields.io/badge/-React_Native-black?style=for-the-badge&logoColor=white&logo=react&color=61DAFB" alt="React Native" />
+    <img src="https://img.shields.io/badge/-Expo-black?style=for-the-badge&logoColor=white&logo=expo&color=000020" alt="Expo" />
+        <img src="https://img.shields.io/badge/-Appwrite-black?style=for-the-badge&logoColor=white&logo=appwrite&color=F02E65" alt="Appwrite" />
+    <img src="https://img.shields.io/badge/-Tailwind-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="Tailwind" />
+    <img src="https://img.shields.io/badge/-TypeScript-black?style=for-the-badge&logoColor=white&logo=typescript&color=3178C6" alt="TypeScript" />
+  </div>
+
 # Fast Food Delivery App
 
 A robust, full-stack Food Delivery mobile application built with React Native, Expo, TypeScript, Tailwind CSS (NativeWind), Zustand, and Appwrite. The application provides a seamless user experience with secure authentication, dynamic search and filtering, cart management, and a modern, responsive UI.
