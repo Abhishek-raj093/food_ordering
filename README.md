@@ -1,152 +1,94 @@
-<div align="center">
-  <br />
-    <a href="https://www.youtube.com/watch?v=LKrX390fJMw" target="_blank">
-      <img src="assets/readme/hero.png" alt="Project Banner">
-    </a>
-  <br />
+# Fast Food Delivery App
 
-  <div>
-    <img src="https://img.shields.io/badge/-React_Native-black?style=for-the-badge&logoColor=white&logo=react&color=61DAFB" alt="React Native" />
-    <img src="https://img.shields.io/badge/-Expo-black?style=for-the-badge&logoColor=white&logo=expo&color=000020" alt="Expo" />
-        <img src="https://img.shields.io/badge/-Appwrite-black?style=for-the-badge&logoColor=white&logo=appwrite&color=F02E65" alt="Appwrite" />
-    <img src="https://img.shields.io/badge/-Tailwind-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="Tailwind" />
-    <img src="https://img.shields.io/badge/-TypeScript-black?style=for-the-badge&logoColor=white&logo=typescript&color=3178C6" alt="TypeScript" />
-  </div>
+A robust, full-stack Food Delivery mobile application built with React Native, Expo, TypeScript, Tailwind CSS (NativeWind), Zustand, and Appwrite. The application provides a seamless user experience with secure authentication, dynamic search and filtering, cart management, and a modern, responsive UI.
 
-  <h3 align="center">Food Delivery Mobile App</h3>
+## Features
 
-   <div align="center">
-     Build this project step by step with our detailed tutorial on <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a> YouTube. Join the JSM family!
-    </div>
-</div>
+- **User Authentication:** Secure sign-in and sign-up with email/password.
+- **Home Screen:** Highlights featured items and provides quick navigation.
+- **Search & Filter:** Explore menu items by category or keyword.
+- **Product Details:** View detailed information and images for each menu item.
+- **Cart Management:** Add, remove, and customize items in the cart with real-time price updates.
+- **Profile Management:** Update user information and preferences.
+- **Appwrite Integration:** Utilizes Appwrite for backend, database, and file storage.
+- **Modern UI/UX:** Styled with Tailwind CSS using NativeWind for a consistent and responsive design.
+- **State Management:** Efficient state handling with Zustand.
+- **Error Tracking:** Integrated with Sentry for monitoring and debugging.
 
-## 📋 <a name="table">Table of Contents</a>
+## Tech Stack
 
-1. 🤖 [Introduction](#introduction)
-2. ⚙️ [Tech Stack](#tech-stack)
-3. 🔋 [Features](#features)
-4. 🤸 [Quick Start](#quick-start)
-5. 🔗 [Assets](#links)
-6. 🚀 [More](#more)
+- **React Native** – Cross-platform mobile development
+- **Expo** – Streamlined development and deployment
+- **TypeScript** – Type safety and improved developer experience
+- **Tailwind CSS (NativeWind)** – Utility-first styling for React Native
+- **Zustand** – Lightweight state management
+- **Appwrite** – Backend-as-a-service for authentication, database, and storage
+- **Sentry** – Application monitoring and error tracking
 
-## 🚨 Tutorial
+## Project Structure
 
-This repository contains the code corresponding to an in-depth tutorial available on our YouTube channel, <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a>.
+```
+.
+├── app/                # Application screens and layouts
+│   ├── (auth)/         # Authentication-related screens
+│   ├── (tabs)/         # Main tab screens (home, search, cart, profile)
+│   └── globals.css     # Tailwind/NativeWind global styles
+├── assets/             # Fonts, icons, and images
+├── components/         # Reusable UI components
+├── constants/          # Static data and constants
+├── lib/                # Appwrite logic, data seeding, and hooks
+├── store/              # Zustand stores (auth, cart)
+├── type.d.ts           # TypeScript types and interfaces
+├── .env                # Environment variables (Appwrite configuration)
+├── package.json
+└── README.md
+```
 
-If you prefer visual learning, this is the perfect resource for you. Follow our tutorial to learn how to build projects like these step-by-step in a beginner-friendly manner!
+## Getting Started
 
-<a href="https://www.youtube.com/watch?v=LKrX390fJMw" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/1736fca5-a031-4854-8c09-bc110e3bc16d" /></a>
+### 1. Clone the Repository
 
-## <a name="introduction">🤖 Introduction</a>
-
-Built with React Native, TypeScript, and Tailwind CSS, this full-stack Food Delivery app features Google Authentication, dynamic search and filters, cart functionality, and smooth navigation. Powered by Appwrite for backend, database, and file storage, it delivers a responsive, scalable, and intuitive user experience with modern UI/UX best practices.
-
-If you're getting started and need assistance or face any bugs, join our active Discord community with over **50k+** members. It's a place where people help each other out.
-
-<a href="https://discord.com/invite/n6EdbFJ" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/618f4872-1e10-42da-8213-1d69e486d02e" /></a>
-
-## <a name="tech-stack">⚙️ Tech Stack</a>
-
-- **[Appwrite](https://jsm.dev/rn25-appwrite)** is an open-source backend-as-a-service platform offering secure authentication (email/password, OAuth, SMS, magic links), databases, file storage with compression/encryption, real-time messaging, serverless functions, and static site hosting via Appwrite Sites—all managed through a unified console and microservices architecture.
-
-- **[Expo](https://expo.dev/)** is an open-source platform for building universal native apps (Android, iOS, web) using JavaScript/TypeScript and React Native. It features file-based routing via Expo Router, fast refresh, native modules for camera/maps/notifications, over-the-air updates (EAS), and streamlined app deployment.
-
-- **[NativeWind](https://www.nativewind.dev/)** brings Tailwind CSS to React Native and Expo, allowing you to style mobile components using utility-first classes for fast, consistent, and responsive UI design.
-
-- **[React Native](https://reactnative.dev/)** is a framework for building mobile UIs with React. It enables component‑based, cross-platform development with declarative UI, deep native API support, and is tightly integrated with Expo for navigation and native capabilities.
-
-- **[Tailwind CSS](https://tailwindcss.com/)** is a utility-first CSS framework enabling rapid UI design via low-level classes. In React Native/Expo, it’s commonly used with NativeWind to apply Tailwind-style utilities to mobile components.
-
-- **[TypeScript](https://www.typescriptlang.org/)** is a statically-typed superset of JavaScript providing type annotations, interfaces, enums, generics, and enhanced tooling. It improves error detection, code quality, and scalability—ideal for robust, maintainable projects.
-
-- **[Zustand](https://github.com/pmndrs/zustand)** is a minimal, hook-based state management library for React and React Native. It lets you manage global state with zero boilerplate, no context providers, and excellent performance through selective state subscriptions.
-
-- **[Sentry](https://jsm.dev/rn-food-sentry)** is a powerful error tracking and performance monitoring tool for React Native apps. It helps you detect, diagnose, and fix issues in real-time to improve app stability and user experience.
-
-
-
-## <a name="features">🔋 Features</a>
-
-### Features of the Mobile Movie AppProject
-
-👉 **Google Authentication**: Secure and seamless user sign-ins using Google.  
-
-👉 **Home Page**: Showcases the latest offers and directs users to filtered search results.  
-
-👉 **Search Page**: Lets users explore all foods with category filters and keyword search.  
-
-👉 **Product Details Page**: Displays food images, key details, and allows adding items to the cart.  
-
-👉 **Cart Page**: Review selected items and see the total price.  
-
-👉 **Profile Page**: Manage user settings and preferences.  
-
-👉 **Appwrite Integration**: Handles backend database and file storage for food items.
-
-and many more, including code architecture and reusability.
-
-## <a name="quick-start">🤸 Quick Start</a>
-
-Follow these steps to set up the project locally on your machine.
-
-**Prerequisites**
-
-Make sure you have the following installed on your machine:
-
-- **[Git](https://git-scm.com/)**
-- **[Node.js](https://nodejs.org/en)**
-- **[npm](https://www.npmjs.com/)** _(Node Package Manager)_
-
-**Cloning the Repository**
-
-```bash
-git clone https://github.com/adrianhajdin/food_ordering.git
+```sh
+git clone https://github.com/your-organization/food_ordering.git
 cd food_ordering
 ```
 
-**Installation**
+### 2. Install Dependencies
 
-Install the project dependencies using npm:
-
-```bash
+```sh
 npm install
 ```
 
-**Set Up Environment Variables**
+### 3. Configure Environment Variables
 
-Create a new file named `.env` in the root of your project and add the following content:
+Create a `.env` file in the root directory with your Appwrite credentials:
 
-```env
-EXPO_PUBLIC_APPWRITE_PROJECT_ID=
-EXPO_PUBLIC_APPWRITE_ENDPOINT=
+```
+EXPO_PUBLIC_APPWRITE_PROJECT_ID=your_project_id
+EXPO_PUBLIC_APPWRITE_ENDPOINT=https://your-appwrite-endpoint/v1
 ```
 
-Replace the placeholder values with your actual credentials by signing up on the **[Appwrite](https://jsm.dev/rn25-appwrite)** dashboard.
+### 4. Start the Application
 
-**Running the Project**
-
-```bash
+```sh
 npx expo start
 ```
 
-Open your ExpoGO app on your phone and scan the QR code to view the project.
+Open the app using Expo Go or an emulator.
 
-## <a name="links">🔗 Assets</a>
+## Assets
 
-Assets and snippets used in the project can be found in the **[video kit](https://jsmastery.com/video-kit/d6633345-8797-4b96-8a4b-935618306d1d)**.
+All images, icons, and fonts are located in the `assets/` directory.
 
-<a href="https://jsmastery.com/video-kit/d6633345-8797-4b96-8a4b-935618306d1d" target="_blank">
-  <img src="assets/readme/videokit.png" alt="Video Kit Banner">
-</a>
+## Documentation
 
-## <a name="more">🚀 More</a>
+- [React Native Documentation](https://reactnative.dev/)
+- [Expo Documentation](https://docs.expo.dev/)
+- [Appwrite Documentation](https://appwrite.io/docs)
+- [NativeWind Documentation](https://www.nativewind.dev/)
+- [Zustand Documentation](https://docs.pmnd.rs/zustand/getting-started/introduction)
+- [Sentry Documentation](https://docs.sentry.io/platforms/react-native/)
 
-**Advance your skills with Next.js Pro Course**
+---
 
-Enjoyed creating this project? Dive deeper into our PRO courses for a richer learning adventure. They're packed with
-
-detailed explanations, cool features, and exercises to boost your skills. Give it a go!
-
-<a href="https://jsm.dev/rn-food-jsm" target="_blank">
-   <img src="assets/readme/jsmpro.png" alt="Project Banner">
-</a>
+**This project is maintained for educational and demonstration purposes.**
